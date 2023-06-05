@@ -15,6 +15,17 @@ ul.nav-menu {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
+
+.navbar-image {
+    width: 5%;
+    height: 5%;
+    margin-right: 10%;
+}
+
+/* décale l'image de la navbar vers la gauche */
+
+
+
 li {
     float: left;
 }
@@ -89,7 +100,8 @@ li a:hover:not(.active) {
 
 
 /* centre la div "second-section" */
-.second-section, .main-title {
+.second-section,
+.main-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +110,8 @@ li a:hover:not(.active) {
 }
 
 /* centre les elements de la barre de navigation */
-.nav-menu, .section-3 {
+.nav-menu,
+.section-3 {
     display: flex;
     justify-content: center;
     align-items: center;
