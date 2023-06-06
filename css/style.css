@@ -77,6 +77,13 @@ li a:hover:not(.active) {
     padding: 0 30px;
 }
 
+/* ajoute une marge en haut à l'image */
+
+.card img {
+    margin-top: 5%;
+}
+
+
 .type {
     color: grey;
     font-size: 22px;
@@ -119,3 +126,25 @@ li a:hover:not(.active) {
 }
 
 /* centre les elements de la div "section-3" */
+
+.hr {
+    width: 50%;
+    height: 5px;
+    background-color: brown;
+}
+
+#hr-1,
+#hr-2,
+#hr-3 {
+    margin-bottom: 5%;
+}
+
+#hr-3 {
+    margin-top: 5%;
+}
+
+
+
+#places {
+    font-style: italic;
+}
