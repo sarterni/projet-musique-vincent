@@ -22,7 +22,7 @@ ul.nav-menu {
     margin-right: 10%;
 }
 
-/* décale l'image de la navbar vers la gauche */
+
 
 
 
@@ -46,14 +46,14 @@ li a:hover:not(.active) {
     background-color: #04AA6D;
 }
 
-/* descdnre la div "main-title" */
+
 .main-title {
     margin-top: 5%;
 }
 
 
 .Home-img {
-    /* center image */
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +77,7 @@ li a:hover:not(.active) {
     padding: 0 30px;
 }
 
-/* ajoute une marge en haut à l'image */
+
 
 .card img {
     margin-top: 5%;
@@ -106,17 +106,6 @@ li a:hover:not(.active) {
 }
 
 
-/* centre la div "second-section" */
-.second-section,
-.main-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-/* centre les elements de la barre de navigation */
 .nav-menu,
 .section-3 {
     display: flex;
@@ -125,7 +114,15 @@ li a:hover:not(.active) {
     flex-direction: row;
 }
 
-/* centre les elements de la div "section-3" */
+.second-section,
+.main-title,
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
 
 .hr {
     width: 50%;
@@ -139,7 +136,8 @@ li a:hover:not(.active) {
     margin-bottom: 5%;
 }
 
-#hr-3 {
+#hr-3,
+#hr-4 {
     margin-top: 5%;
 }
 
@@ -148,3 +146,174 @@ li a:hover:not(.active) {
 #places {
     font-style: italic;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*Footer*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: green;
+    
+}
+
+footer .containerf {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .containerf h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .containerf h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ffeb3b;
+}
+
+footer .containerf .sec p {
+    color: #fff;
+}
+
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 10px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #37502c;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: red;
+}
+
+.sci li a .fa-brands {
+    color: #fff;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+
+}
+
+.quicklinks li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: #ffeb3b;
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+}
+
+.info li span {
+    color: #fff;
+}
+
+.info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #ffeb3b;
+}
+
+.copyrightText {
+    width: 100%;
+    background: black;
+    padding: 8px 100px;
+    text-align: center;
+    color: #fff;
+
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .containerf {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyrightText {
+        padding: 8px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .containerf {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/*End of Footer*/
+
+
