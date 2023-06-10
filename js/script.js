@@ -50,7 +50,12 @@ window.addEventListener('load', function () {
             });
         }
 
-        // q: mets l'image dans le tableau "images"
+// q: Ajoute l'image uploadée dans ".image-container"
+// a: 
+
+// 
+
+
         
 
 

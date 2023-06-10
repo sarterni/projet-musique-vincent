@@ -1,3 +1,7 @@
+html {
+    display: block;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -164,23 +168,18 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-/*Footer*/
+
 
 footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 100px;
+    padding: 10px;
     background: green;
-    
+
 }
 
-footer .containerf {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
+
 
 footer .containerf h2 {
     position: relative;
@@ -284,7 +283,6 @@ footer .containerf .sec p {
 }
 
 .copyrightText {
-    width: 100%;
     background: black;
     padding: 8px 100px;
     text-align: center;
@@ -314,6 +312,41 @@ footer .containerf .sec p {
 }
 
 
-/*End of Footer*/
+.containerf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.containerf>* {
+    margin: 0;
+}
+
+
+.section-4 {
+    margin-bottom: 50px;
+}
+
+
+.sec {
+    width: 50%;
+}
+
+/* reduits la taille de la div .copyrightText */
+
+
+@media (max-width: 768px) {
+    .containerf {
+        flex-direction: column;
+    }
+
+    .sec {
+        width: 100%;
+    }
+}
+
+/* responsive pour #resume */
 
 
