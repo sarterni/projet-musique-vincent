@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
     let i = 0;
     let diapo = document.getElementById('img');
     let timer = setInterval(function () {
-        diapo.src = 'img/diapo/' + images[i];
+        diapo.src = '../img/diapo/' + images[i];
         i++;
         if (i == images.length) i = 0;
     }, 5000);
@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
         if (i == text.length) i = 0;
     }, 5000);
 
-    // upload file
+    
 
     Array.prototype.forEach.call(
         document.querySelectorAll(".file-upload__button"),
@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
             const label = button.parentElement.querySelector(".file-upload__label");
             const defaultLabelText = "No file(s) selected";
 
-            // Set default text for label
+            
             label.textContent = defaultLabelText;
             label.title = defaultLabelText;
 
@@ -50,10 +50,10 @@ window.addEventListener('load', function () {
             });
         }
 
-        // q: Ajoute l'image uploadée dans ".image-container"
-        // a: 
+        
+        
 
-        // 
+        
 
 
 
@@ -65,20 +65,20 @@ window.addEventListener('load', function () {
 
 
 
-    // Sélectionnez le champ de texte et le bouton dans votre HTML
+    
     var inputField = document.getElementById("input-restricted");
     var button = document.getElementById("go-to-restrcted");
 
-    // Écoutez l'événement de saisie dans le champ de texte
+    
     inputField.addEventListener("input", function () {
         var userInput = inputField.value;
 
-        // Vérifiez si la saisie correspond à "ABCDEF"
+        
         if (userInput === "ABCDEF") {
-            // Activez le bouton
+            
             button.disabled = false;
         } else {
-            // Désactivez le bouton
+            
             button.disabled = true;
         }
     });

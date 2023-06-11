@@ -54,9 +54,56 @@ li a:hover:not(.active) {
 }
 
 
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.blog-section {
+    width: 100%;
+}
+.blog-section .content-blog {
+    width: 85%;
+    margin: 20px auto;
+
+}
+
+.blog-section .content-blog .title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    
+}
+.blog-section .content-blog .title h2 {
+    font-size: 40px;
+    color: #23d25d;
+    text-transform: uppercase;
+    
+}
+.blog-section .content-blog .title p {
+    font-size: 20px;
+    color: #6a6a6a;
+margin-top: 20px;
+}
+
+.blog-section .content-blog .cards-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto; 
+    
+}
+.blog-section .content-blog .cards-blog .card {
+    width: 100%;
+    background: color #f7f7f7; 
+    position: relative;
+
+}
+
+.viewmore-btn {
+    border: none;
+    background: cornflowerblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
