@@ -152,7 +152,7 @@ li a:hover:not(.active) {
 }
 
 table {
-    
+
     border-collapse: collapse;
     width: 75%;
 }
@@ -172,7 +172,7 @@ tr:nth-child(even) {
 
 footer {
     position: relative;
-    
+
     height: auto;
     padding: 10px;
     background: #333;
@@ -250,9 +250,7 @@ footer .containerf .sec p {
     display: inline-block;
 }
 
-.quicklinks li a:hover {
-
-}
+.quicklinks li a:hover {}
 
 .info {
     position: relative;
@@ -278,9 +276,7 @@ footer .containerf .sec p {
     text-decoration: none;
 }
 
-.info a:hover {
-
-}
+.info a:hover {}
 
 .copyrightText {
     background: black;
@@ -334,7 +330,7 @@ footer .containerf .sec p {
     width: 50%;
 }
 
-/* reduits la taille de la div .copyrightText */
+
 
 
 @media (max-width: 768px) {
@@ -347,42 +343,12 @@ footer .containerf .sec p {
     }
 }
 
-/* responsive pour #resume */
-
-
-/* q: vertical align #liens-rapides et #nav-quicklinks */
-/* a:
-    - mettre les deux div en display: flex;
-    - mettre les deux div en flex-direction: column;
-    - mettre les deux div en justify-content: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center;
-    - mettre les deux div en align-items: center;
-    - mettre les deux div en align-content: center;
-    - mettre les deux div en align-self: center; */
 
 
 
 
+
+
+
+   
+   

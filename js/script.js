@@ -50,17 +50,39 @@ window.addEventListener('load', function () {
             });
         }
 
-// q: Ajoute l'image uploadée dans ".image-container"
-// a: 
+        // q: Ajoute l'image uploadée dans ".image-container"
+        // a: 
 
-// 
+        // 
 
 
-        
+
 
 
 
     );
+
+
+
+
+    // Sélectionnez le champ de texte et le bouton dans votre HTML
+    var inputField = document.getElementById("input-restricted");
+    var button = document.getElementById("go-to-restrcted");
+
+    // Écoutez l'événement de saisie dans le champ de texte
+    inputField.addEventListener("input", function () {
+        var userInput = inputField.value;
+
+        // Vérifiez si la saisie correspond à "ABCDEF"
+        if (userInput === "ABCDEF") {
+            // Activez le bouton
+            button.disabled = false;
+        } else {
+            // Désactivez le bouton
+            button.disabled = true;
+        }
+    });
+
 
 
 });
