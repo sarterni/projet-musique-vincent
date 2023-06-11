@@ -28,3 +28,7 @@
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 20px;
 } */
+
+            <h4>Accès restreint</h4>
+            
+            <label for="mdp">Mot de passe</label>
