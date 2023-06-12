@@ -57,6 +57,7 @@ li a:hover:not(.active) {
 .blog-section {
     width: 100%;
 }
+
 .blog-section .content-blog {
     width: 85%;
     margin: 20px auto;
@@ -67,33 +68,73 @@ li a:hover:not(.active) {
     width: 60%;
     text-align: center;
     margin: auto;
-    
+
 }
-.blog-section .content-blog .title h2 {
+
+.blog-section .content-blog .title h1 {
     font-size: 40px;
     color: #23d25d;
     text-transform: uppercase;
-    
+
 }
+
 .blog-section .content-blog .title p {
     font-size: 20px;
     color: #6a6a6a;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .blog-section .content-blog .cards-blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    margin: 25px auto; 
-    
+    margin: 25px auto;
+
 }
+
 .blog-section .content-blog .cards-blog .card {
     width: 100%;
-    background: color #f7f7f7; 
+    background: color #f7f7f7;
     position: relative;
 
 }
+
+.blog-section .content-blog .cards-blog .card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.blog-section .content-blog .cards-blog .card .blog-article {
+    padding: 15px 20px;
+
+}
+
+.blog-section .content-blog .cards-blog .card .blog-article h4 {
+    font-size: 24px;
+    color: #23d25d;
+
+}
+
+.blog-section .content-blog .cards-blog .card .blog-article p {
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+
+}
+
+.blog-section .content-blog .cards-blog .card .posted-date p {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #23d25d;
+    padding: 6px 15px;
+
+}
+
+
 
 .viewmore-btn {
     border: none;
@@ -106,4 +147,50 @@ margin-top: 20px;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.viewmore-btn {
+    position: relative;
+    top: -25px;
+}
+
+.viewmore-btn:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blog-section .content-blog .cards-blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-section .content-blog .title h2 {
+        font-size: 30px;
+    }
+
+    .blog-section .content-blog .title p {
+        font-size: 16px;
+    }
+
+    .blog-section .content-blog .cards-blog .card .blog-article h4 {
+        font-size: 20px;
+    }
+
+    .blog-section .content-blog .cards-blog .card .blog-article p {
+        font-size: 14px;
+    }
+
+    .blog-section .content-blog .cards-blog .card .posted-date p {
+        font-size: 14px;
+    }
+}
+
+
+.blog-section {
+    margin-top: 10%;
 }
