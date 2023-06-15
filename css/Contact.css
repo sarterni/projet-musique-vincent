@@ -53,3 +53,11 @@ li a:hover:not(.active) {
     padding-left: 3%;
 }
 
+.Formulaire-Conctact {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
