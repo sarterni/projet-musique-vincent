@@ -2,7 +2,7 @@ window.addEventListener('load', function () {
     console.log('All assets are loaded')
 
 
-    let images = new Array('guitar-756326.jpg', 'diapo1.jpg', 'diapo2.jpg', 'diapo3.jpg', 'diapo4.jpg');
+    let images = new Array('Babylon Destruct copy.png', 'guitar-756326.jpg', 'diapo1.jpg', 'diapo2.jpg', 'diapo3.jpg', 'diapo4.jpg');
     let i = 0;
     let diapo = document.getElementById('img');
     let timer = setInterval(function () {
@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
         if (i == text.length) i = 0;
     }, 5000);
 
-    
+
 
     Array.prototype.forEach.call(
         document.querySelectorAll(".file-upload__button"),
@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
             const label = button.parentElement.querySelector(".file-upload__label");
             const defaultLabelText = "No file(s) selected";
 
-            
+
             label.textContent = defaultLabelText;
             label.title = defaultLabelText;
 
@@ -50,10 +50,10 @@ window.addEventListener('load', function () {
             });
         }
 
-        
-        
 
-        
+
+
+
 
 
 
@@ -65,20 +65,20 @@ window.addEventListener('load', function () {
 
 
 
-    
+
     var inputField = document.getElementById("input-restricted");
     var button = document.getElementById("go-to-restrcted");
 
-    
+
     inputField.addEventListener("input", function () {
         var userInput = inputField.value;
 
-        
+
         if (userInput === "ABCDEF") {
-            
+
             button.disabled = false;
         } else {
-            
+
             button.disabled = true;
         }
     });
