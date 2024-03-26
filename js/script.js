@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
     let i = 0;
     let diapo = document.getElementById('img');
     let timer = setInterval(function () {
-        diapo.src = '../img/diapo/' + images[i];
+        diapo.src = './img/diapo/' + images[i];
         i++;
         if (i == images.length) i = 0;
     }, 5000);
